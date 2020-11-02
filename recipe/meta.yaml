@@ -1,5 +1,5 @@
 {% set name = "fgivenx" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fgivenx-{{ version }}.tar.gz
-  sha256: 6564db73d5c6236bde05464794e9fb164c5ab4b9a093891b5a79c65562b4f3fd
+  sha256: 243f62f6b33ee9041c349e00bb411c6dd48ae9a44225aa7a0f657c69618f34c9
 
 build:
   number: 0
@@ -39,7 +39,7 @@ test:
 about:
   home: https://github.com/williamjameshandley/fgivenx
   doc_url: http://fgivenx.readthedocs.io/
-  summary: 'Functional Posterior Plotter'
+  summary: Functional Posterior Plotter
   license: MIT
   license_file: LICENSE.txt
   description: |
