@@ -27,14 +27,13 @@ requirements:
     - scipy
 
 test:
-  imports:
-    - fgivenx
-    - fgivenx.test
   requires:
+    - pip
     - pytest
     - pytest-mpl
   commands:
-    - python -m pytest --pyargs fgivenx
+    - python -m pip check
+    - python -m pytest -ra -v --pyargs fgivenx
 
 about:
   home: https://github.com/williamjameshandley/fgivenx
