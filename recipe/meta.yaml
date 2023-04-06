@@ -18,12 +18,12 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=2.7
+    - python >=3.8
     - setuptools
   run:
     - matplotlib-base
     - numpy
-    - python >=2.7
+    - python >=3.8
     - scipy
 
 test:
@@ -33,6 +33,7 @@ test:
     - pytest-mpl
   commands:
     - python -m pip check
+    - python -m pip show fgivenx
     - python -m pytest -ra -v --pyargs fgivenx
 
 about:
