@@ -28,6 +28,8 @@ requirements:
 
 test:
   requires:
+    # https://github.com/handley-lab/fgivenx/issues/22
+    - matplotlib-base <3.8.0a0
     - pip
     - pytest
     - pytest-mpl
