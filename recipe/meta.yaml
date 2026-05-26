@@ -1,5 +1,5 @@
 {% set name = "fgivenx" %}
-{% set version = "2.4.2" %}
+{% set version = "2.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fgivenx-{{ version }}.tar.gz
-  sha256: df3c4593744b106ca28f9b43fe4038dcbea9240f249bc0b647e5d6ae3b7626ca
+  sha256: 0e2ce781d4022337c6a5676f9aa050c6de12461cef0a8f1f721952a14c7f91bd
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
